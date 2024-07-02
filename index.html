@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css" integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <main>
+      <article class="left-article">
+
+        <form action="/">
+          <div class="title">
+            <h2>Mortgage Calculator</h2>
+            <input type="reset" value="Clear All">
+          </div>
+
+          <label for="amount">Mortgage Amount</label>
+          <div class="amount-container">
+            <div class="square-amount">£</div>
+            <input type="number" name="amount" id="amount">
+          </div>
+
+          <label for="term">Mortgage Term</label>
+          <div class="term-container">
+            <input type="number" name="term" id="term">
+            <div class="square-term">years</div>
+          </div>
+
+          <label for="rate">Interest Rate</label>
+          <div class="rate-container">
+            <input type="number" name="rate" id="rate">
+            <div class="square-rate">%</div>
+          </div>
+
+          <legend for="type">Mortgage Type</legend>
+          <div class="radio-container">
+            <div class="radio-label">
+              <input type="radio" id="repayment" name="input" />
+              <label for="repayment">Repayment</label>
+            </div>
+
+            <div class="radio-label">
+              <input type="radio" id="only" name="input" />
+              <label for="only">Interest Only</label>
+            </div>
+          </div>
+
+          <button type="submit" class="calculate" id="calculate">
+            <span class="mdi mdi-calculator"></span>
+            Calculate Repayments
+          </button>
+        </form>
+      </article>
+      <article class="right-article">
+        <img src="/image.png" alt="illustration inutile">
+        <h2>Results shown here</h2>
+        <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+      </article>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
